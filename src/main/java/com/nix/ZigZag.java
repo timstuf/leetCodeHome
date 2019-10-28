@@ -6,7 +6,7 @@ public class ZigZag {
     public String convert(String s, int numRows) {
         if (s == null) throw new NullPointerException();
         if (s.length() == 0) throw new IllegalStateException();
-        if(numRows==0) throw new IllegalArgumentException();
+        if(numRows<1) throw new IllegalArgumentException();
         if(s.length()<=numRows || numRows==1)  return s;
 
         String[] result = new String[numRows];

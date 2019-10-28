@@ -1,7 +1,7 @@
 package com.nix;
 
 public class LongestSubstring {
-    public static int lengthOfLongestSubstring(String s) {
+    public int lengthOfLongestSubstring(String s) {
         if (s == null) throw new NullPointerException();
         if (s.length() == 0) return 0;
         int max = 1, currentLength = 1, uniqueSymbolsActualLength = 1;
@@ -30,9 +30,5 @@ public class LongestSubstring {
 
         return max;
 
-    }
-
-    public static void main(String[] args) {
-        int a = lengthOfLongestSubstring("anvajkl");
     }
 }

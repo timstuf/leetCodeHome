@@ -11,19 +11,5 @@ public class WaterContainer {
             else line2--;
         }
         return max;
-        /*for(int i = 0; i< height.length-1; i++)
-        {
-            if(height[height.length-1-i]> height[line2]) line2 = height.length-1-i;
-            if(height[i+1]> height[line1]) line1 = i+1;
-        }
-
-        /*for(int i = 0; i< height.length-1; i++)
-        {
-            for(int j = i+1; j<height.length; j++)
-            {
-                temp = (j-i)*Math.min(height[i], height[j]);
-                max = Math.max(max, temp);
-            }
-        }*/
     }
 }
